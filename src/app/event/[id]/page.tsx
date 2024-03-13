@@ -40,7 +40,7 @@ export default async function Home({ params }: Readonly<{ params: { id: string }
       </div>
 
       <article className="mt-4 grid justify-center">
-        <Link href="https://ticketswap.com">
+        <Link href="/">
           <Logo />
         </Link>
       </article>

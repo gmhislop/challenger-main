@@ -35,7 +35,7 @@ export function PopularEvents() {
 
       {events.map((event) => (
         <a
-          className="relative aspect-video rounded-lg overflow-hidden"
+          className="relative aspect-video rounded-lg overflow-hidden hover:border border-primary hover:scale-105 transform transition-all duration-300"
           href={`/event/${event.id}`}
           key={event.id}
         >

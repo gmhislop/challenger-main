@@ -77,7 +77,7 @@ export default function Home() {
       <PopularEvents />
 
       <article className="mt-4 grid justify-center">
-        <a href="https://ticketswap.com">
+        <a href="/">
           <Logo />
         </a>
       </article>
