@@ -6,9 +6,9 @@ export default function Home() {
     <main className="max-w-3xl mx-auto p-4 my-4 grid gap-5">
       <div className="grid gap-3">
         <Logo />
-        <h1 className="text-2xl text-black">Welcome to the TicketSwap challenger™</h1>
+        <h1 className="text-2xl">Welcome to the TicketSwap challenger™</h1>
 
-        <p className="text-black">
+        <p>
           The goal of this challenger is to finish the todo list stated below ✅
           Of course, if you see anything that can be improved that is not on the
           todo list, you are welcome to do so 😊
@@ -18,7 +18,7 @@ export default function Home() {
       <div className="h-[1px] bg-slate-900 bg-opacity-5" />
 
       <div className="grid gap-3">
-        <h2 className="text-xl flex items-center gap-2 text-black">
+        <h2 className="text-xl flex items-center gap-2">
           <ListTodo /> Todo
         </h2>
 
@@ -54,11 +54,11 @@ export default function Home() {
       <div className="h-[1px] bg-slate-900 bg-opacity-5" />
 
       <div className="grid gap-3">
-        <h2 className="text-xl flex items-center gap-2 text-black">
+        <h2 className="text-xl flex items-center gap-2">
           <Book /> References
         </h2>
 
-        <p className="text-black text-sm">
+        <p className="text-sm">
           <strong>Tip:</strong> Below is a list of references you can use to get
           started if you have little experience with the tech stack. If you have
           any question you can always{" "}
