@@ -1,1 +1,1 @@
-export type { PopularEventsProps, EventListProps, Event } from '@/app/components/types';
+export type { PopularEventsProps, Event } from '@/app/components/types';
