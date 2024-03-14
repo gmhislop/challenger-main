@@ -5,3 +5,13 @@ export type PopularEventsProps = {
     date: string;
     imageUrl: string;
 }
+
+export type Event = {
+    id: number;
+    name: string;
+    alerts: number;
+    date: string;
+    location: string;
+    description: string;
+    imageUrl: string;
+};

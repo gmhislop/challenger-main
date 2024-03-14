@@ -1,9 +1,9 @@
 "use client";
 import { useState } from 'react';
 import Link from 'next/link';
-import { Logo } from '../Logo';
+import { Logo } from '../../common/Logo';
 
-const Navbar = () => {
+export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:flex items-center space-x-4">
                         <Link href="/search">
-                            Search
+                            <p className='text-foreground'>Search</p>
                         </Link>
                     </div>
                     <div className="md:hidden">
@@ -40,5 +40,3 @@ const Navbar = () => {
         </nav>
     );
 }
-
-export default Navbar;

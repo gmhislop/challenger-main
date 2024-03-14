@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import { Logo } from "@/app/components/Logo";
 import { database } from "@/lib/mock-db";
 import { Bell } from "lucide-react";
 import Image from "next/image";
+import { Logo } from '@/app/components/common';
 
 export default async function Home({ params }: Readonly<{ params: { id: string } }>) {
   const event = await database.getEvent(Number(params.id))

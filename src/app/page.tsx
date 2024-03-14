@@ -1,7 +1,8 @@
 import { Book, ListTodo, Loader } from "lucide-react";
 import { Suspense } from "react";
-import { Logo } from "./components/Logo";
-import PopularEvents from "./components/PopularEvents";
+import { Logo } from "./components/common/Logo";
+import PopularEvents from "./components/modules/PopularEvents";
+import { LoadMore } from "./components/common";
 
 export default function Home() {
   return (
@@ -58,9 +59,7 @@ export default function Home() {
 
       <section className="p-6 bg-[#00131a] bg-opacity-50 rounded-lg backdrop-filter backdrop-blur-lg text-white lg:col-span-2">
         <Suspense fallback={
-          <div className="grid place-items-center md:col-span-3 p-10">
-            <Loader className="animate-spin" />
-          </div>
+          <LoadMore />
         }>
           <PopularEvents />
         </Suspense>
