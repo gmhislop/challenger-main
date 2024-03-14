@@ -1,38 +1,20 @@
-"use client"
-
-import { Calendar, Loader } from "lucide-react"
+import * as i from "@/types"
+import { Calendar } from "lucide-react"
 import Image from "next/image"
-import { useEffect, useState } from "react"
 
-export function PopularEvents() {
-  const [events, setEvents] = useState<any[]>([])
-  const [loading, setLoading] = useState(true)
+export default async function PopularEvents() {
 
-  useEffect(() => {
-    const fetchPopularEvents = async () => {
-      const data = await fetch("/api/events/popular?amount=6").then(
-        (response) => response.json()
-      )
+  const response = await fetch("http://localhost:3000/api/events/popular?amount=6");
 
-      setEvents(data.events)
-      setLoading(false)
-    }
+  const data = await response.json();
 
-    fetchPopularEvents()
-  }, [])
+  const events = data.events as i.PopularEventsProps[]
 
   return (
     <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
       <h1 className="text-xl md:col-span-3 flex items-center gap-2">
         <Calendar /> Popular events
       </h1>
-
-      {loading && (
-        <div className="grid place-items-center md:col-span-3 p-10">
-          <Loader className="animate-spin" />
-        </div>
-      )}
-
       {events.map((event) => (
         <a
           className="relative aspect-video rounded-lg overflow-hidden hover:border border-primary hover:scale-105 transform transition-all duration-300"
