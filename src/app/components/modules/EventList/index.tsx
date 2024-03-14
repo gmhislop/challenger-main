@@ -35,10 +35,9 @@ export const EventList = ({ allEvents }: Readonly<{ allEvents: i.Event[] }>) => 
                             duration: 0.5,
                         }}
                         viewport={{ amount: 0 }}
-                        className="max-w-sm rounded relative w-full"
                     >
                         <a
-                            className="relative aspect-video rounded-lg overflow-hidden"
+                            className="relative aspect-video overflow-hidden"
                             href={`/event/${event.id}`}
                             key={event.id}
                         >
