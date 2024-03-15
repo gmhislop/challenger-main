@@ -14,7 +14,7 @@ First of all, you need to setup your local environment.
 If you don't have [node/npm](https://nodejs.org/en/) installed yet, be sure to do so.
 
 ```shell script
-> git clone git@github.com:TicketSwap/challenger.git
+> git clone git@github.com:gmhislop/challenger-main.git
 > cd challenger
 > npm i
 > npm run dev
