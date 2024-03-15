@@ -13,4 +13,7 @@ export const database = {
 
     return events.find((event) => event.id === id) ?? null
   },
+  getEvents: async () => {
+    return await getEvents()
+  },
 }

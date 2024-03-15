@@ -15,7 +15,6 @@ export const EventList = ({ allEvents }: Readonly<{ allEvents: i.Event[] }>) => 
         visible: { opacity: 1 },
     };
     const stagger = 1.5;
-
     return (
         <>
             <div className="flex justify-center items-center w-full py-6">
